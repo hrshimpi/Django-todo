@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'todoTask',
         'USER': 'root',
-        'PASSWORD':'Realme@5pro',
+        'PASSWORD':'',
     }
 }
 

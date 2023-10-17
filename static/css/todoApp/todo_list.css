@@ -1,0 +1,157 @@
+body {
+    font: 400 1rem "Josefin Sans", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    border-radius: 70px;
+    background: #f6f6f6;
+    box-shadow:  -8px 8px 16px #cfcfcf,
+                8px -8px 16px #ffffff;
+    /* background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: green;
+}
+.pending{
+    text-decoration: none;
+    color: #666;
+}
+.result{
+    height: 396px;
+}
+
+.btn-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.todo {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-title {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-description {
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+
+.todo-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-button {
+    background-color: #1b1c1d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #393939 ;
+}
+
+
+.clear-button {
+    background-color: #db2828;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clear-button:hover {
+    background-color: #c71010;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    padding: 5px 10px;
+    border: 1px solid #0d71bb;
+    border-radius: 5px;
+    margin: 0 ;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    background-color: #2185d0;
+    color: #fff;
+}
+.add-btn {
+    background: #00b5ad;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-btn:hover {
+    background-color: #039089;
+}
+
+.btn {
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .my-button:hover {
+    background-color: #0056b3;
+} */
+
+.app-title{
+    text-align: center;
+}

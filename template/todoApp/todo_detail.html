@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel='stylesheet'href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../static/css/todoApp/todo_detail.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo Title: {{ todo.title }}</h1>
+        <h2>Description:</h2>
+        <p>{{ todo.description }}</p>
+        <h2>Status:</h2>
+        <p>{{ todo.status }}</p>
+    </div>
+</body>
+</html>

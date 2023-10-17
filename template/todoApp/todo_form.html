@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if form.instance.id %}Edit{% else %}Create{% endif %} Todo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel='stylesheet'href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/static/css/todoApp/todo_form.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>{% if form.instance.id %}Edit{% else %}Create{% endif %} Todo</h1>
+        <form method="post" action="{% if form.instance.id %}{% url 'todo_update' form.instance.id %}{% else %}{% url 'todo_create' %}{% endif %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% if form.instance.id %}Update{% else %}Create{% endif %} Todo</button>
+        </form>
+        {% if form.errors %}
+        <ul class="errorlist">
+            {% for field, errors in form.errors.items %}
+                {% for error in errors %}
+                    <li>{{ field|title }}: {{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
